@@ -14,7 +14,11 @@ CE2 : mention(21) : false
 
 function mention($note)
 {
+    if ($note < 0
+    || $note > 20) {
     return false ;
+    }
+    else return "";
 }
 
 function testMention_CE1() 
