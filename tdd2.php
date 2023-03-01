@@ -22,6 +22,10 @@ function mention($note)
         && $note < 14) {
         return "AB";
     } 
+    if ($note >= 14
+        && $note < 16) {
+        return "Bien";
+    } 
     return "";
 }
 
@@ -78,7 +82,7 @@ testMention_CN2();
 echo PHP_EOL;
 
 function testMention_CN3() 
-    { if (mention(14) === "B") 
+    { if (mention(14) === "Bien") 
         { 
             echo " Test mention(14) : OK " ; 
         } 
