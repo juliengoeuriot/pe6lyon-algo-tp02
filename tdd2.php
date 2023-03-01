@@ -29,7 +29,11 @@ function mention($note)
    if ($note >= 16
         && $note < 18) {
         return "TB";
-    }    
+    } 
+    if ($note >= 18
+        && $note < 20) {
+        return "Excellent";
+    }   
     return "";
 }
 
