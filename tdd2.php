@@ -26,6 +26,10 @@ function mention($note)
         && $note < 16) {
         return "Bien";
     } 
+   if ($note >= 16
+        && $note < 18) {
+        return "TB";
+    }    
     return "";
 }
 
@@ -105,5 +109,18 @@ function testMention_CN4()
         } 
     }
 testMention_CN4();
+echo PHP_EOL;
+
+function testMention_CN5() 
+    { if (mention(18) === "Excellent") 
+        { 
+            echo " Test mention(18) : OK " ; 
+        } 
+        else 
+        { 
+            echo " Test mention(18) : Échec" ;
+        } 
+    }
+testMention_CN5();
 echo PHP_EOL;
 
