@@ -94,4 +94,16 @@ function testMention_CN3()
 testMention_CN3();
 echo PHP_EOL;
 
+function testMention_CN4() 
+    { if (mention(16) === "TB") 
+        { 
+            echo " Test mention(16) : OK " ; 
+        } 
+        else 
+        { 
+            echo " Test mention(16) : Échec" ;
+        } 
+    }
+testMention_CN4();
+echo PHP_EOL;
 
