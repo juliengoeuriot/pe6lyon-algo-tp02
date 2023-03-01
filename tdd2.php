@@ -15,10 +15,14 @@ CE2 : mention(21) : false
 function mention($note)
 {
     if ($note < 0
-    || $note > 20) {
-    return false ;
+        || $note > 20) {
+        return false ;
     }
-    else return "";
+    if ($note >= 12
+        && $note < 14) {
+        return "AB";
+    } 
+    return "";
 }
 
 function testMention_CE1() 
@@ -71,6 +75,19 @@ function testMention_CN2()
         } 
     }
 testMention_CN2();
+echo PHP_EOL;
+
+function testMention_CN3() 
+    { if (mention(14) === "B") 
+        { 
+            echo " Test mention(14) : OK " ; 
+        } 
+        else 
+        { 
+            echo " Test mention(14) : Échec" ;
+        } 
+    }
+testMention_CN3();
 echo PHP_EOL;
 
 
