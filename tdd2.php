@@ -3,18 +3,18 @@
 # Attribuer une mention
 
 /*
-CE1 : mention(-1) : FAUX
+CE1 : mention(-1) : false
 CN1 : mention(8) : ""
 CN2 : mention(12) : AB
 CN3 : mention(14) : Bien
 CN4 : mention(16) : TB
 CN5 : mention(18) : Excellent
-CE2 : mention(21) : FAUX
+CE2 : mention(21) : false
 */
 
 function mention($note)
 {
-    return true ;
+    return false ;
 }
 
 function testMention_CE1() 
@@ -28,3 +28,4 @@ function testMention_CE1()
         } 
     }
 testMention_CE1();
+
