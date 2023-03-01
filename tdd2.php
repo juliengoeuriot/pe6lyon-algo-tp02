@@ -60,5 +60,17 @@ function testMention_CE2()
 testMention_CN1();
 echo PHP_EOL;
 
+function testMention_CN2() 
+    { if (mention(12) === "AB") 
+        { 
+            echo " Test mention(12) : OK " ; 
+        } 
+        else 
+        { 
+            echo " Test mention(12) : Échec" ;
+        } 
+    }
+testMention_CN2();
+echo PHP_EOL;
 
 
